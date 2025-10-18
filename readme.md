@@ -1,4 +1,19 @@
-# Home Assistant Package for **Südwind Ambientika smart**
+# Home Assistant Integration for **Südwind Ambientika smart**
+
+> **🎉 This project now includes a Home Assistant Custom Integration!**
+>
+> For easier setup and better integration, check out the new [Custom Component](custom_components/ambientika/) which provides:
+> - UI-based configuration (no more YAML editing)
+> - Automatic device setup and discovery
+> - Better entity organization and device grouping
+> - Robust error handling and token management
+> - HACS support for easy installation
+>
+> [**➡️ Get started with the Custom Integration**](README_CUSTOM_COMPONENT.md)
+
+---
+
+## Original YAML Package
 
 This package provides multiple config files that will create REST sensors, (REST) scripts, automations, and other config entities for using the [Südwind Ambientika smart](https://www.ambientika.eu/en/ambientika-smart/sw10035) within [Home Assistant](https://www.home-assistant.io/).
 Since I haven't found any smart *single-room heat recovery ventilation system* within the EU that fits all my requirements, I decided to take matters into my own hands. I purchased the Südwind Ambientika smart and started to reverse-engineer the REST API used to remotely control the unit using the [Android App](https://play.google.com/store/apps/details?id=sw.ambientika.app). For those who are interested in my **requirements**: 

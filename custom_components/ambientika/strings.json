@@ -1,0 +1,39 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Ambientika Smart Setup",
+        "description": "Enter your Ambientika account credentials",
+        "data": {
+          "username": "Username",
+          "password": "Password"
+        }
+      },
+      "device": {
+        "title": "Device Configuration",
+        "description": "Configure your Ambientika device",
+        "data": {
+          "device_serial": "Device Serial Number (MAC Address)",
+          "device_role": "Device Role"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to Ambientika service",
+      "invalid_auth": "Invalid authentication credentials",
+      "device_not_found": "Device not found or not accessible",
+      "unknown": "Unexpected error occurred"
+    },
+    "abort": {
+      "already_configured": "Device is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Ambientika Options",
+        "description": "Configure integration options"
+      }
+    }
+  }
+}
