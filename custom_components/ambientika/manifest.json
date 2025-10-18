@@ -1,0 +1,13 @@
+{
+  "domain": "ambientika",
+  "name": "Ambientika Smart",
+  "codeowners": [],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/bdynamic/HomeAssistant-Ambientika-custom",
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/bdynamic/HomeAssistant-Ambientika-custom/issues",
+  "requirements": ["aiohttp>=3.8.0"],
+  "version": "1.0.0"
+}
