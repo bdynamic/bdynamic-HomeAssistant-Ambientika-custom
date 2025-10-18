@@ -1,3 +1,6 @@
+# DISCLAIMER
+This is work in Progress and not yet functional. It seems that currently all Homeassistant plugins (even the one from Amnientika) fail to authenticate...
+
 # Home Assistant Integration for **Südwind Ambientika smart**
 
 > **🎉 This project now includes a Home Assistant Custom Integration!**
