@@ -1,0 +1,75 @@
+# Services for Ambientika Smart integration
+
+reset_filter:
+  name: Reset Filter
+  description: Reset the filter status of an Ambientika device
+  fields:
+    device_id:
+      name: Device
+      description: The Ambientika device to reset the filter for
+      required: false
+      selector:
+        device:
+          integration: ambientika
+
+change_mode:
+  name: Change Mode
+  description: Change the operating mode and settings of an Ambientika device
+  fields:
+    device_id:
+      name: Device
+      description: The Ambientika device to change the mode for
+      required: false
+      selector:
+        device:
+          integration: ambientika
+    operating_mode:
+      name: Operating Mode
+      description: The operating mode to set
+      required: true
+      default: "Smart"
+      selector:
+        select:
+          options:
+            - "Smart"
+            - "Auto"
+            - "ManualHeatRecovery"
+            - "Night"
+            - "AwayHome"
+            - "Surveillance"
+            - "TimedExpulsion"
+            - "Expulsion"
+            - "Intake"
+            - "MasterSlaveFlow"
+            - "SlaveMasterFlow"
+            - "Off"
+    fan_speed:
+      name: Fan Speed
+      description: Fan speed level (1=Low, 2=Medium, 3=High)
+      required: false
+      default: 1
+      selector:
+        number:
+          min: 1
+          max: 3
+          step: 1
+    humidity_level:
+      name: Humidity Level
+      description: Humidity level (1=Dry, 2=Normal, 3=Moist)
+      required: false
+      default: 1
+      selector:
+        number:
+          min: 1
+          max: 3
+          step: 1
+    light_sensor_level:
+      name: Light Sensor Level
+      description: Light sensor level (0=Off, 1=Low, 2=Medium)
+      required: false
+      default: 0
+      selector:
+        number:
+          min: 0
+          max: 2
+          step: 1
